@@ -1,0 +1,121 @@
+main {
+    width: 1000px;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+main * {
+    margin-left: 100px;
+}
+
+main h1 {
+    font-size: 3rem;
+    font-family: Karla, sans-serif;
+}
+
+main h1 p {
+    font-size: 3rem;
+}
+
+main h1 div,
+main h1 div p {
+    margin: 0;
+}
+
+#rotate-div {
+    background-color: #0e4263;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(-10deg);
+}
+
+#rotate-p {
+    transform: rotate(10deg);
+}
+
+#img {
+    width: 500px;
+    height: 300px;
+    margin-top: 60px;
+    transform: rotate(-10deg);
+    background-color: #70767f;
+    margin-bottom: 60px;
+}
+
+#update-date {
+    margin-top: 120px;
+    font-size: 1.4rem;
+    font-family: Roboto, sans-serif;
+    color: #5c6c82
+}
+
+main h2 {
+    margin-top: 80px;
+    font-size: 2.4rem;
+    font-family: Karla, sans-serif;
+}
+
+main p {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    font-family: Open Sans, sans-serif;
+}
+
+main p i {
+    margin: 0;
+}
+
+@media (max-width:1020px) {
+    main {
+        width: 600px;
+    }
+
+    main * {
+        margin-left: 0;
+    }
+
+    #img {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width:610px) {
+    main {
+        width: 400px;
+    }
+
+    main h1 {
+        font-size: 2.1rem;
+    }
+
+    #rotate-p {
+        font-size: 2.1rem;
+    }
+
+    #img {
+        display: none;
+    }
+
+    #update-date {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:410px) {
+    main {
+        width: 300px;
+    }
+
+    #update-date {
+        font-size: 1rem;
+    }
+
+    main h2 {
+        font-size: 1.7rem;
+    }
+
+    main p {
+        font-size: 1.2rem;
+    }
+
+}
