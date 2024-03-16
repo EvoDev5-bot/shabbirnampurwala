@@ -25,14 +25,14 @@ main {
     flex-wrap: wrap;
 }
 
-.box {
+#boxes a {
+    padding: 10px;
     width: 400px;
-    height: 200px;
+    height: auto;
     margin-top: 200px;
     border: 2px solid #1e293b;
     background-image: linear-gradient(#0f172a, #1e293c);
     border-radius: 15px;
-    transform: rotate(5deg);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,22 +40,26 @@ main {
     transition: all 0.1s ease-in-out;
     margin-right: 50px;
     text-align: center;
+}
 
+#one {
+    transform: rotate(5deg);
 }
 
 #pricingGridContainerTitle {
     font-size: 2.1rem;
 }
 
-#pricingGridContainer {
-    transform: rotate(-5deg)
+#two {
+    transform: rotate(-5deg);
+
 }
 
-#pricingGridContainer:hover {
+#two:hover {
     transform: rotate(0)
 }
 
-.box:hover {
+#one:hover {
     transform: rotate(0);
 }
 
@@ -80,8 +84,13 @@ main {
     font-family: Roboto, sans-serif;
 }
 
-a {
+#endMsg a {
     color: #0ea5e9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit
 }
 
 @media(max-width:1020px) {
@@ -111,10 +120,6 @@ a {
 
     #chatapp {
         height: 180px;
-    }
-
-    .box {
-        height: 260px;
     }
 
     #endMsg {
