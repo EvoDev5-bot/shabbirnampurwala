@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280px, initial-scale=1.0">
+    <title>Portfolio | Shabbir Nampurwala</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="top-bar-portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+    <div id="top-bar">
+        <div class="top-bar-link" id="top-bar-home"> <img src="images/home-icon.png">
+            <p>HOME</p>
+
+        </div>
+        <div class="top-bar-link" id="top-bar-now"> <img src="images/diary-icon.png">
+            <p>NOW</p>
+        </div>
+        <div class="top-bar-link" id="top-bar-about"> <img src="images/about-icon.png">
+            <p>ABOUT</p>
+        </div>
+        <div class="top-bar-link" id="top-bar-portfolio"> <img src="images/projects-icon-selected.png">
+            <p>PORTFOLIO</p>
+            <div id="selector"></div>
+        </div>
+    </div>
+
+    <main>
+        <h1 id="mainTitle">
+            My
+            <div id="rotationDiv">
+                <p id="rotationPara">
+                    PORTFOLIO
+                </p>
+            </div>
+        </h1>
+
+        <div id="boxes">
+
+            <div id="chatapp" class="box">
+
+                <h1 id="chatappTitle" class="title">Chatapp</h1>
+
+                <p id="chatappPara" class="para">
+                    A chatting app I made while learning backend programming for the first time.
+                </p>
+            </div>
+
+            <div id="pricingGridContainer" class="box">
+                <h1 id="pricingGridContainerTitle" class="title">Pricing Grid Container</h1>
+                <p id="pricingGridContainerPara" class="para">A project from Frontend Mentor that I made while learning
+                    frontend programing for the first time</p>
+            </div>
+        </div>
+
+        <p id="endMsg">To see all my projects,
+            <a href="portfolio/all.html">
+                click here
+            </a>
+        </p>
+    </main>
+
+    <script src="top-bar-portfolio.js"></script>
