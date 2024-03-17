@@ -1,0 +1,463 @@
+/* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 1200px;
+    padding: 50px;
+    padding-bottom: 0;
+}
+
+#switch {
+    display: flex;
+    align-items: center;
+    color: #aeb3ca;
+    font-weight: 700;
+}
+
+#button {
+    display: block;
+    width: 80px;
+    height: 40px;
+    background-color: #aeb3ca;
+    margin-left: 20px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+#button::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #f1f3fa;
+    position: relative;
+    top: 5px;
+    left: 45px;
+    border-radius: 30px;
+    transition: 0.2s
+}
+
+input:checked+#button {
+    background-image: linear-gradient(90deg, #378fe6, #76e5a6);
+}
+
+input:checked+#button::after {
+    transform: translateX(-40px)
+}
+
+#check {
+    display: none;
+}
+
+#topBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#bigBoxes {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bigBox {
+    height: 250px;
+    width: 250px;
+    background-color:
+        #f0f3fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.bigBox::before {
+    position: relative;
+    top: -20px;
+    content: 'jkgh';
+    display: block;
+    width: 250px;
+    color: transparent;
+    height: 3px;
+}
+
+#facebookBigBox::before {
+    background-color: hsl(208, 92%, 53%);
+}
+
+#twitterBigBox::before {
+    background-color: hsl(203, 89%, 53%);
+}
+
+#instaBigBox::before {
+    background-image: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+#youtubeBigBox::before {
+    background-color: hsl(348, 97%, 39%)
+}
+
+.bigBox #label {
+    display: flex;
+}
+
+.bigBox #label img {
+    margin-right: 5px;
+}
+
+.bigBox #num {
+    font-size: 3rem;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.bigBox #p {
+    letter-spacing: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    ;
+}
+
+.bigBox #change {
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+    color: hsl(163, 72%, 41%);
+    font-weight: 700;
+}
+
+.bigBox #change img {
+    width: 7px;
+    height: 7px;
+    margin-right: 4px
+}
+
+#youtubeBigBox #change {
+    color: hsl(356, 69%, 56%)
+}
+
+#two {
+    margin-top: 80px;
+    font-size: 1.5rem;
+    color: hsl(228, 12%, 44%);
+}
+
+#smallBoxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.box {
+    width: 264px;
+    height: 150px;
+    background-color: #f0f3fa;
+    margin: 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.box #lefSide,
+.box #rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.box #rightSide img {
+    width: 25px;
+    height: 25px;
+}
+
+.box #rightSide .score {
+    display: flex;
+    align-items: center;
+}
+
+.box #rightSide .score img {
+    width: 7px;
+    height: 7px;
+    margin-right: 4px;
+}
+
+.box #rightSide .score p {
+    color: hsl(163, 72%, 41%);
+    font-weight: 700;
+}
+
+#fb2 #rightSide .score p,
+.yt #rightSide .score p {
+    color: red;
+}
+
+.bodyDM {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.allBoxesDM {
+    background-color:
+        #252b43;
+    /* color: white; 
+}
+
+.bodyLM {
+    background-color: white;
+    color: black
+}
+
+.allBoxesLM {
+    background-color: #f0f3fa;
+}
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 1200px;
+    padding: 50px;
+    padding-bottom: 0;
+}
+
+#switch {
+    display: flex;
+    align-items: center;
+    color: #aeb3ca;
+    font-weight: 700;
+}
+
+#button {
+    display: block;
+    width: 80px;
+    height: 40px;
+    background-color: #aeb3ca;
+    margin-left: 20px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+#button::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #f1f3fa;
+    position: relative;
+    top: 5px;
+    left: 45px;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+input:checked+#button {
+    background-image: linear-gradient(90deg, #378fe6, #76e5a6);
+}
+
+input:checked+#button::after {
+    transform: translateX(-40px);
+}
+
+#check {
+    display: none;
+}
+
+#topBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#bigBoxes {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bigBox {
+    height: 250px;
+    width: 250px;
+    background-color: #f0f3fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.bigBox::before {
+    position: relative;
+    top: -20px;
+    content: ' ';
+    display: block;
+    width: 250px;
+    height: 3px;
+    background-color: transparent;
+}
+
+#facebookBigBox::before {
+    background-color: hsl(208, 92%, 53%);
+}
+
+#twitterBigBox::before {
+    background-color: hsl(203, 89%, 53%);
+}
+
+#instaBigBox::before {
+    background-image: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+#youtubeBigBox::before {
+    background-color: hsl(348, 97%, 39%);
+}
+
+.bigBox #label {
+    display: flex;
+}
+
+.bigBox #label img {
+    margin-right: 5px;
+}
+
+.bigBox #num {
+    font-size: 3rem;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.bigBox #p {
+    letter-spacing: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.bigBox #change {
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+    color: hsl(163, 72%, 41%);
+    font-weight: 700;
+}
+
+.bigBox #change img {
+    width: 7px;
+    height: 7px;
+    margin-right: 4px;
+}
+
+#youtubeBigBox #change {
+    color: hsl(356, 69%, 56%);
+}
+
+#two {
+    margin-top: 80px;
+    font-size: 1.5rem;
+    color: hsl(228, 12%, 44%);
+}
+
+#smallBoxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.box {
+    width: 264px;
+    height: 150px;
+    background-color: #f0f3fa;
+    margin: 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.box #lefSide,
+.box #rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box #rightSide img {
+    width: 25px;
+    height: 25px;
+}
+
+.box #rightSide .score {
+    display: flex;
+    align-items: center;
+}
+
+.box #rightSide .score img {
+    width: 7px;
+    height: 7px;
+    margin-right: 4px;
+}
+
+.box #rightSide .score p {
+    color: hsl(163, 72%, 41%);
+    font-weight: 700;
+}
+
+#fb2 #rightSide .score p,
+.yt #rightSide .score p {
+    color: red;
+}
+
+.bodyDM {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.allBoxesDM {
+    background-color: #252b43;
+}
+
+@media(max-width:1220px) {
+    main {
+        width: 300px
+    }
+
+    #topBar {
+        flex-direction: column;
+        align-items: center
+    }
+
+    #switch {
+        margin-top: 40px;
+    }
+
+    #bigBoxes {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .bigBox {
+        margin-top: 40px;
+    }
+}

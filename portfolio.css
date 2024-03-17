@@ -42,6 +42,7 @@ main {
     text-align: center;
 }
 
+
 #one {
     transform: rotate(5deg);
 }
@@ -69,6 +70,15 @@ main {
 }
 
 #boxes #three:hover {
+    transform: rotate(0)
+}
+
+#boxes #four {
+    transform: rotate(-5deg);
+    margin-top: 30px;
+}
+
+#boxes #four:hover {
     transform: rotate(0)
 }
 
