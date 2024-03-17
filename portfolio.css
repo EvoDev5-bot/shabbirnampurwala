@@ -63,9 +63,22 @@ main {
     transform: rotate(0);
 }
 
+#boxes #three {
+    transform: rotate(5deg);
+    margin-top: 30px;
+}
+
+#boxes #three:hover {
+    transform: rotate(0)
+}
+
 .title {
     font-family: Open Sans, sans-serif;
     font-size: 3rem;
+}
+
+#newletterSingUpWithSuccessMessagesTitle {
+    font-size: 2.1rem;
 }
 
 .para {
@@ -98,10 +111,15 @@ a {
         width: 600px;
     }
 
-    .box {
+    #boxes a {
         width: 100%;
+        ;
         margin-left: 10%;
         margin-top: 60px;
+    }
+
+    #boxes #three {
+        margin-top: 60px
     }
 }
 

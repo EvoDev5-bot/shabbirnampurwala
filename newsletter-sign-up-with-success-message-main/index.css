@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 98vh;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    background-color: #35374c;
+    font-family: Roboto, sans-serif;
+}
+
+
+main {
+    width: 900px;
+    height: 600px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+}
+
+.side {
+    width: 45%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+#leftSide {
+    padding: 40px;
+}
+
+#rightSide {
+    position: relative;
+    left: 30px;
+    width: 54%;
+}
+
+h1 {
+    color: #202440;
+    font-weight: 700;
+}
+
+p {
+    margin-top: 20px;
+}
+
+ul {
+    margin-top: 40px;
+    list-style: none;
+}
+
+li {
+    margin-top: 10px;
+}
+
+li img {
+    width: 12px;
+}
+
+#adress {
+    margin-top: 100px;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    margin-bottom: 30px;
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #232742;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-image: linear-gradient(90deg, hsl(4, 100%, 67%), #fd5f7c);
+}
+
+#emailErrorDiv {
+    display: flex;
+    justify-content: space-between
+}
+
+#error {
+    display: none;
+    color: red;
+    margin-top: 100px;
+}
+
+
+/*Success message starts*/
+
+#success {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 60px;
+}
+
+#success h1 {
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+#success p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+
+@media (max-width:910px) {
+
+    body {
+        align-items: normal;
+    }
+
+    main {
+        width: 320px;
+        flex-direction: column;
+        height: 1300px;
+    }
+
+    #rightSide {
+        order: 1;
+        width: 320px;
+        height: 10000px;
+        position: relative;
+        left: -20px;
+        top: -160px;
+    }
+
+    #leftSide {
+        order: 2;
+        position: relative;
+        top: -180px;
+    }
+
+    .side {
+        width: 100%;
+    }
+
+    button {
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    #success {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        padding-top: 200px;
+    }
+
+    #success button {
+        position: absolute;
+        bottom: 20px;
+        left: 10%;
+        width: 80%;
+        height: 60px;
+    }
+
+}
+
+@media(max-width:350px) {
+    #success {
+        padding-left: 10px;
+    }
+}
